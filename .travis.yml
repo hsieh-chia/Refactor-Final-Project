@@ -1,0 +1,9 @@
+language: java
+dist: focal
+
+jdk:
+  - openjdk15
+
+services:
+  - xvfb
+  

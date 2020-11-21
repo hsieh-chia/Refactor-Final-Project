@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="true" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="pixelitor.Canvas" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/pixelitor/Canvas.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="513" width="251" x="1971" y="4836"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="pixelitor.ConsistencyChecks" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/pixelitor/ConsistencyChecks.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="333" width="365" x="2495" y="657"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="3" language="java" name="pixelitor.Composition.ImageChangeActions" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/pixelitor/Composition.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="225" width="233" x="2241" y="3617"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <enumeration id="4" language="java" name="pixelitor.Composition.LayerAdder.Position" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/pixelitor/Composition.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="135" width="155" x="2879" y="3617"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <class id="5" language="java" name="pixelitor.ExceptionHandler" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/pixelitor/ExceptionHandler.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="292" x="1279" y="1030"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="pixelitor.NewImage.NewImagePanel" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/pixelitor/NewImage.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="261" width="290" x="2144" y="657"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="pixelitor.ThreadPool" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/pixelitor/ThreadPool.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="225" width="338" x="2419" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="pixelitor.Composition.LayerAdder" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/pixelitor/Composition.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="297" width="200" x="2900" y="657"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="pixelitor.CanvasMargins" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/pixelitor/CanvasMargins.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="225" width="246" x="649" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="pixelitor.NewImage" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/pixelitor/NewImage.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="243" width="301" x="2144" y="374"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="pixelitor.TipsOfTheDay" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/pixelitor/TipsOfTheDay.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="189" width="181" x="1058" y="1030"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="pixelitor.Layers" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/pixelitor/Layers.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="243" width="300" x="1804" y="657"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="13" language="java" name="pixelitor.Composition" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/pixelitor/Composition.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="2547" width="340" x="2052" y="1030"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="14" language="java" name="pixelitor.OpenImages" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/pixelitor/OpenImages.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="1179" width="293" x="1657" y="3617"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="15" language="java" name="pixelitor.ChangeReason" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/pixelitor/ChangeReason.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="279" width="235" x="1539" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <class id="16" language="java" name="pixelitor.Pixelitor" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/pixelitor/Pixelitor.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="207" width="284" x="1018" y="657"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="17" language="java" name="pixelitor.RunContext" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/pixelitor/RunContext.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="297" width="190" x="2011" y="3617"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <class id="18" language="java" name="pixelitor.automate.Wizard" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/pixelitor/automate/Wizard.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="297" width="269" x="3403" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="19" language="java" name="pixelitor.automate.BatchResize.BatchResizePanel" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/pixelitor/automate/BatchResize.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="189" width="176" x="691" y="657"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="20" language="java" name="pixelitor.automate.BatchResize" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/pixelitor/automate/BatchResize.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="219" x="1027" y="374"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="21" language="java" name="pixelitor.automate.WizardPage" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/pixelitor/automate/WizardPage.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="207" width="237" x="3435" y="1030"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="22" language="java" name="pixelitor.automate.Automate" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/pixelitor/automate/Automate.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="315" width="401" x="1363" y="657"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="23" language="java" name="pixelitor.automate.SingleDirChooser" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/pixelitor/automate/SingleDirChooser.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="189" width="259" x="738" y="1030"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="24" language="java" name="pixelitor.automate.FileFormatSelector" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/pixelitor/automate/FileFormatSelector.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="176" x="544" y="3617"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="25" language="java" name="pixelitor.automate.OpenSaveDirsPanel" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/pixelitor/automate/OpenSaveDirsPanel.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="225" width="347" x="351" y="1030"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="26" language="java" name="pixelitor.automate.AutoPaint" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/pixelitor/automate/AutoPaint.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="315" width="340" x="311" y="657"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="27" language="java" name="pixelitor.automate.BatchFilterWizard" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/pixelitor/automate/BatchFilterWizard.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="171" width="166" x="3140" y="374"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="28" language="java" name="pixelitor.automate.AutoPaint.ConfigPanel" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/pixelitor/automate/AutoPaint.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="441" width="223" x="46" y="1030"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="29" language="java" name="pixelitor.automate.AutoPaint.Settings" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/pixelitor/automate/AutoPaint.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="297" width="226" x="64" y="3617"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="30" language="java" name="pixelitor.automate.BatchFilterWizardPage" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/pixelitor/automate/BatchFilterWizardPage.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="274" x="3140" y="657"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <dependency id="31">    
+    <bendpoint x="320" y="1030"/>    
+    <bendpoint x="320" y="3617"/>    
+    <end type="SOURCE" refId="26"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <generalization id="32">    
+    <end type="SOURCE" refId="27"/>    
+    <end type="TARGET" refId="18"/>  
+  </generalization>  
+  <nesting id="33">    
+    <bendpoint x="2909" y="1030"/>    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="4"/>  
+  </nesting>  
+  <dependency id="34">    
+    <end type="SOURCE" refId="26"/>    
+    <end type="TARGET" refId="13"/>  
+  </dependency>  
+  <dependency id="35">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <association id="36">    
+    <end type="SOURCE" refId="19" navigable="false">      
+      <attribute id="37" name="openSaveDirsPanel"/>      
+      <multiplicity id="38" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="25" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="39">    
+    <end type="SOURCE" refId="27"/>    
+    <end type="TARGET" refId="30"/>  
+  </dependency>  
+  <dependency id="40">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="13"/>  
+  </dependency>  
+  <association id="41">    
+    <bendpoint x="2888" y="1030"/>    
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="42" name="position"/>      
+      <multiplicity id="43" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="44">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="45" name="INSTANCE"/>      
+      <multiplicity id="46" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="5" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="47">    
+    <bendpoint x="1739" y="1030"/>    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="12"/>  
+  </dependency>  
+  <dependency id="48">    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="22"/>  
+  </dependency>  
+  <dependency id="49">    
+    <end type="SOURCE" refId="28"/>    
+    <end type="TARGET" refId="29"/>  
+  </dependency>  
+  <dependency id="50">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <dependency id="51">    
+    <bendpoint x="2525" y="1030"/>    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="17"/>  
+  </dependency>  
+  <dependency id="52">    
+    <bendpoint x="2504" y="1030"/>    
+    <bendpoint x="2504" y="3617"/>    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <association id="53">    
+    <bendpoint x="3444" y="374"/>    
+    <bendpoint x="3444" y="657"/>    
+    <end type="SOURCE" refId="18" navigable="false">      
+      <attribute id="54" name="currentPage"/>      
+      <multiplicity id="55" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="56">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="8"/>  
+  </nesting>  
+  <dependency id="57">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="13"/>  
+  </dependency>  
+  <dependency id="58">    
+    <bendpoint x="2021" y="1030"/>    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="14"/>  
+  </dependency>  
+  <association id="59">    
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="60" name="comp"/>      
+      <multiplicity id="61" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="13" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="62">    
+    <bendpoint x="1632" y="1030"/>    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="17"/>  
+  </dependency>  
+  <nesting id="63">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="3"/>  
+  </nesting>  
+  <dependency id="64">    
+    <bendpoint x="2464" y="657"/>    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="13"/>  
+  </dependency>  
+  <realization id="65">    
+    <end type="SOURCE" refId="30"/>    
+    <end type="TARGET" refId="21"/>  
+  </realization>  
+  <dependency id="66">    
+    <end type="SOURCE" refId="27"/>    
+    <end type="TARGET" refId="22"/>  
+  </dependency>  
+  <association id="67">    
+    <end type="SOURCE" refId="25" navigable="false">      
+      <attribute id="68" name="outputFormatSelector"/>      
+      <multiplicity id="69" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="24" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="70">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="13"/>  
+  </dependency>  
+  <dependency id="71">    
+    <bendpoint x="1027" y="1030"/>    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="14"/>  
+  </dependency>  
+  <nesting id="72">    
+    <end type="SOURCE" refId="26"/>    
+    <end type="TARGET" refId="28"/>  
+  </nesting>  
+  <dependency id="73">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <dependency id="74">    
+    <end type="SOURCE" refId="22"/>    
+    <end type="TARGET" refId="13"/>  
+  </dependency>  
+  <dependency id="75">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="13"/>  
+  </dependency>  
+  <association id="76">    
+    <bendpoint x="1980" y="3617"/>    
+    <end type="SOURCE" refId="13" navigable="false">      
+      <attribute id="77" name="canvas"/>      
+      <multiplicity id="78" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="79">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="17"/>  
+  </dependency>  
+  <dependency id="80">    
+    <bendpoint x="1332" y="657"/>    
+    <bendpoint x="1611" y="1030"/>    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="14"/>  
+  </dependency>  
+  <dependency id="81">    
+    <bendpoint x="1653" y="1030"/>    
+    <end type="SOURCE" refId="22"/>    
+    <end type="TARGET" refId="14"/>  
+  </dependency>  
+  <nesting id="82">    
+    <bendpoint x="299" y="1030"/>    
+    <end type="SOURCE" refId="26"/>    
+    <end type="TARGET" refId="29"/>  
+  </nesting>  
+  <association id="83">    
+    <end type="SOURCE" refId="23" navigable="false">      
+      <attribute id="84" name="fileFormatSelector"/>      
+      <multiplicity id="85" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="24" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="86">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="11"/>  
+  </dependency>  
+  <dependency id="87">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="14"/>  
+  </dependency>  
+  <nesting id="88">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="6"/>  
+  </nesting>  
+  <nesting id="89">    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="19"/>  
+  </nesting>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

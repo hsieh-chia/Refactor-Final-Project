@@ -1,0 +1,73 @@
+/*
+ * Copyright 2020 Laszlo Balazs-Csiki and Contributors
+ *
+ * This file is part of Pixelitor. Pixelitor is free software: you
+ * can redistribute it and/or modify it under the terms of the GNU
+ * General Public License, version 3 as published by the Free
+ * Software Foundation.
+ *
+ * Pixelitor is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with Pixelitor. If not, see <http://www.gnu.org/licenses/>.
+ */
+
+package pixelitor.guides;
+
+import pixelitor.filters.gui.BooleanParam;
+import pixelitor.filters.gui.ParamAdjustmentListener;
+import pixelitor.filters.gui.RangeParam;
+import pixelitor.gui.utils.GUIUtils;
+
+import javax.swing.*;
+import java.util.List;
+
+import static java.lang.String.format;
+
+/**
+ * The GUI for adding a single (horizontal or vertical) guide
+ */
+public class AddSingleGuidePanel extends JPanel {
+    private final Guides.Builder builder;
+    private final boolean horizontal; // horizontal or vertical
+
+    private final RangeParam percents;
+
+    public AddSingleGuidePanel(Guides.Builder builder, boolean horizontal) {
+        this.builder = builder;
+        this.horizontal = horizontal;
+
+        var canvas = builder.getCanvas();
+        int maxSize = horizontal ? canvas.getWidth() : canvas.getHeight();
+        percents = new RangeParam("Position (%)", 0, 50, 100);
+        var pixels = new RangeParam("Position (Pixels)", 0, maxSize / 2.0, maxSize);
+        percents.linkWith(pixels, maxSize / 100.0);
+
+        BooleanParam clearExisting = builder.getClearExisting();
+        GUIUtils.arrangeVertically(this, List.of(percents, pixels, clearExisting));
+
+        ParamAdjustmentListener updatePreview = () -> createGuides(true);
+        percents.setAdjustmentListener(updatePreview);
+        pixels.setAdjustmentListener(updatePreview);
+        builder.setAdjustmentListener(updatePreview);
+        updatePreview.paramAdjusted(); // trigger initial preview
+    }
+
+    public void createGuides(boolean preview) {
+        builder.build(preview, this::setup);
+    }
+
+    private void setup(Guides guides) {
+        float percentage = percents.getPercentageValF();
+        if (horizontal) {
+            guides.addHorRelative(percentage);
+            guides.setName(format("horizontal at %.2f", percentage));
+        } else {
+            guides.addVerRelative(percentage);
+            guides.setName(format("vertical at %.2f", percentage));
+        }
+    }
+}
