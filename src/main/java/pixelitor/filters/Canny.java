@@ -107,12 +107,12 @@ public class Canny extends ParametrizedFilter {
 
     private static void showNotEnoughMemoryDialog(long estimatedMemoryMB,
                                                   long availableMemoryMB) {
-        String msg = "This image is too large for the Canny edge detection algorithm.\n" +
+        String alertMessage = "This image is too large for the Canny edge detection algorithm.\n" +
                 "Press Cancel in the following dialog and try with smaller images.\n" +
                 "Available memory is " + availableMemoryMB +
                 " megabytes, memory needed for this image is " + estimatedMemoryMB
                 + " megabytes.";
-        Messages.showInfo("Not enough memory", msg);
+        Messages.showInfo("Not enough memory", alertMessage);
     }
 
     private static long estimateNeededMemoryMB(BufferedImage src) {
