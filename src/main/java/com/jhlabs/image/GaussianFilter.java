@@ -157,11 +157,14 @@ public class GaussianFilter extends ConvolveFilter {
                             ix = (x + width) % width;
                         }
                     }
+                    // get 32 bits 
                     int rgb = inPixels[ioffset + ix];
+                    // divide 32 bits into 8,8,8,8 for a r g b 
                     int pa = (rgb >> 24) & 0xff;
                     int pr = (rgb >> 16) & 0xff;
                     int pg = (rgb >> 8) & 0xff;
                     int pb = rgb & 0xff;
+                    // 透明度 ，若有，rgb皆需要乘上透明度
                     if (premultiply) {
                         float a255 = pa * (1.0f / 255.0f);
                         pr = (int) (pr * a255);
@@ -196,23 +199,23 @@ public class GaussianFilter extends ConvolveFilter {
      * @param radius the blur radius
      * @return the kernel
      */
-    public static Kernel makeKernel(float radius) {
-        int r = (int) Math.ceil(radius);
-        int rows = r * 2 + 1;
+    public static Kernel makeKernel(float f_radius) {
+        int radius = (int) Math.ceil(f_radius);
+        int rows = radius * 2 + 1;
         float[] matrix = new float[rows];
-        float sigma = radius / 3;
-        float sigma22 = 2 * sigma * sigma;
+        float sigma = f_radius / 3;
+        float sigma_multi2_power2 = 2 * sigma * sigma;
         float sigmaPi2 = 2 * ImageMath.PI * sigma;
-        float sqrtSigmaPi2 = (float) Math.sqrt(sigmaPi2);
-        float radius2 = radius * radius;
+        float sqrtSigmaPi_multi2 = (float) Math.sqrt(sigmaPi2);
+        float radius_multi2 = f_radius * f_radius;
         float total = 0;
         int index = 0;
-        for (int row = -r; row <= r; row++) {
-            float distance = row * row;
-            if (distance > radius2) {
+        for (int index_row = -radius; index_row <= radius; index_row++) {
+            float distance = index_row * index_row;
+            if (distance > radius_multi2) {
                 matrix[index] = 0;
             } else {
-                matrix[index] = (float) Math.exp(-distance / sigma22) / sqrtSigmaPi2;
+                matrix[index] = (float) Math.exp(-distance / sigma_multi2_power2) / sqrtSigmaPi_multi2;
             }
             total += matrix[index];
             index++;
