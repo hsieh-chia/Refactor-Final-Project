@@ -69,11 +69,11 @@ public class ChannelInvert extends ParametrizedFilter {
         new Item("Green", GREEN_ONLY),
         new Item("Blue", BLUE_ONLY),
 
-        new Item("Red and Green", RED_GREEN),
-        new Item("Red and Blue", RED_BLUE),
-        new Item("Green and Blue", GREEN_BLUE),
+        new Item("Red and Green", RED_GREEN),       //yellow
+        new Item("Red and Blue", RED_BLUE),         //purple
+        new Item("Green and Blue", GREEN_BLUE),     
 
-        new Item("Red, Green and Blue", RED_GREEN_BLUE),
+        new Item("Red, Green and Blue", RED_GREEN_BLUE),        //black & white
     };
 
     private final IntChoiceParam invertTypeSelector = new IntChoiceParam("Invert Channel", invertChoices);
@@ -124,6 +124,10 @@ public class ChannelInvert extends ParametrizedFilter {
         int[] destData = ImageUtils.getPixelsAsArray(dest);
 
         float[] hsb = {0.0f, 0.0f, 0.0f};
+        // HSB(HSV) 通過色相/飽和度/亮度三要素來表達顏色.
+        // H(Hue):表示顏色的型別(例如紅色,綠色或者黃色).取值範圍為0—360.其中每一個值代表一種顏色.
+        // S(Saturation):顏色的飽和度.從0到1.有時候也稱為純度.(0表示灰度圖,1表示純的顏色)
+        // B(Brightness or Value):顏色的明亮程度.從0到1.(0表示黑色,1表示特定飽和度的顏色)
 
         for (int i = 0; i < destData.length; i++) {
             int srcPixel = srcData[i];
