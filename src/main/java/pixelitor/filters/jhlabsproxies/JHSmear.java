@@ -17,7 +17,13 @@
 
 package pixelitor.filters.jhlabsproxies;
 
+import com.jhlabs.image.SmearFilterCrosses;
+import com.jhlabs.image.SmearFilterLines;
+import com.jhlabs.image.SmearFilterShapesCircles;
+import com.jhlabs.image.SmearFilterShapesDiamonds;
+import com.jhlabs.image.SmearFilterSquares;
 import com.jhlabs.image.SmearFilter;
+
 import pixelitor.filters.ParametrizedFilter;
 import pixelitor.filters.gui.AngleParam;
 import pixelitor.filters.gui.IntChoiceParam;
@@ -78,15 +84,18 @@ public class JHSmear extends ParametrizedFilter {
 
         Random rand = ReseedSupport.reInitialize();
 
-        if (filter == null) {
-            filter = new SmearFilter(NAME);
-        }
-
+        filter = switch(shape.getValue()) {
+        	case SmearFilter.LINES -> new SmearFilterLines(NAME);
+        	case SmearFilter.CROSSES -> new SmearFilterCrosses(NAME);
+        	case SmearFilter.CIRCLES -> new SmearFilterShapesCircles(NAME);
+        	case SmearFilter.SQUARES -> new SmearFilterSquares(NAME);
+        	case SmearFilter.DIAMONDS -> new SmearFilterShapesDiamonds(NAME);
+        	default -> new SmearFilterLines(NAME);
+        };
         filter.setDistance(distanceValue);
         filter.setDensity(density.getPercentageValF());
         filter.setAngle((float) angle.getValueInRadians());
         filter.setMix(mix.getPercentageValF());
-        filter.setShape(shape.getValue());
         filter.setRandomGenerator(rand);
 
         dest = filter.filter(src, dest);
