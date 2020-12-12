@@ -1,0 +1,1433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="true" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="com.jhlabs.image.HalftoneFilter" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/HalftoneFilter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="333" width="274" x="7363" y="3131"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="com.jhlabs.image.CurvesFilter" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/CurvesFilter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="171" width="232" x="5861" y="1948"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="com.jhlabs.image.BlockFilter" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/BlockFilter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="171" width="274" x="52" y="410"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="com.jhlabs.image.MedianFilter" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/MedianFilter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="135" width="199" x="5070" y="1948"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="com.jhlabs.image.ImageMath" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/ImageMath.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="1179" width="262" x="5126" y="4008"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="com.jhlabs.image.SwimFilter" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/SwimFilter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="459" width="195" x="4910" y="3131"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="com.jhlabs.image.PixelUtils" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/PixelUtils.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="693" width="183" x="7742" y="4008"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="com.jhlabs.image.WaterFilter" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/WaterFilter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="567" width="274" x="3572" y="3131"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="com.jhlabs.image.CrystallizeFilter" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/CrystallizeFilter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="279" width="166" x="6197" y="3131"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="com.jhlabs.image.OilFilter" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/OilFilter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="261" width="199" x="4311" y="1948"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="11" language="java" name="com.jhlabs.image.Colormap" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/Colormap.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="81" width="109" x="5876" y="4008"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="12" language="java" name="com.jhlabs.image.ReduceNoiseFilter" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/ReduceNoiseFilter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="135" width="199" x="4831" y="1948"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="13" language="java" name="com.jhlabs.image.DiffuseFilter" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/DiffuseFilter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="225" width="274" x="3258" y="3131"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="14" language="java" name="com.jhlabs.image.KaleidoscopeFilter" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/KaleidoscopeFilter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="567" width="274" x="2944" y="3131"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="15" language="java" name="com.jhlabs.image.VariableBlurFilter" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/VariableBlurFilter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="531" width="368" x="1622" y="410"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="16" language="java" name="com.jhlabs.image.EdgeFilter" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/EdgeFilter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="387" width="199" x="7335" y="1948"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="17" language="java" name="com.jhlabs.image.GlowFilter" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/GlowFilter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="207" width="274" x="6021" y="1107"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="18" language="java" name="com.jhlabs.image.ShadowFilter" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/ShadowFilter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="531" width="274" x="2030" y="410"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="19" language="java" name="com.jhlabs.image.OffsetFilter" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/OffsetFilter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="513" width="274" x="4221" y="3131"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="20" language="java" name="com.jhlabs.image.LinearColormap" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/LinearColormap.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="225" width="134" x="5486" y="3131"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="21" language="java" name="com.jhlabs.image.PolarFilter" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/PolarFilter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="531" width="274" x="2316" y="3131"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="22" language="java" name="com.jhlabs.image.ColorHalftoneFilter" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/ColorHalftoneFilter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="333" width="274" x="1308" y="410"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="23" language="java" name="com.jhlabs.image.LensBlurFilter" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/LensBlurFilter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="351" width="274" x="994" y="410"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="24" language="java" name="com.jhlabs.image.TransferFilter" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/TransferFilter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="261" width="274" x="6649" y="1107"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="25" language="java" name="com.jhlabs.image.SmartBlurFilter" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/SmartBlurFilter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="333" width="345" x="8025" y="1107"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="26" language="java" name="com.jhlabs.image.GaussianFilter" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/GaussianFilter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="243" width="493" x="8395" y="1948"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="27" language="java" name="com.jhlabs.image.SparkleFilter" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/SparkleFilter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="675" width="171" x="3612" y="1107"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="28" language="java" name="com.jhlabs.image.UnsharpFilter" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/UnsharpFilter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="225" width="274" x="8528" y="3131"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="29" language="java" name="com.jhlabs.image.Curve" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/Curve.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="207" width="133" x="5250" y="3131"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="30" language="java" name="com.jhlabs.image.DoGFilter" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/DoGFilter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="351" width="274" x="2344" y="410"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="31" language="java" name="com.jhlabs.image.Gradient" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/Gradient.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="801" width="195" x="5660" y="3131"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="32" language="java" name="com.jhlabs.image.BoxBlurFilter" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/BoxBlurFilter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="423" width="274" x="1369" y="1948"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="33" language="java" name="com.jhlabs.image.BrushedMetalFilter" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/BrushedMetalFilter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="513" width="274" x="680" y="410"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="34" language="java" name="com.jhlabs.image.EmbossFilter" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/EmbossFilter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="351" width="199" x="5958" y="3131"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="35" language="java" name="com.jhlabs.image.PerspectiveFilter" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/PerspectiveFilter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="837" width="335" x="4535" y="3131"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="36" language="java" name="com.jhlabs.image.QuantizeFilter" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/QuantizeFilter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="333" width="259" x="7719" y="1948"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="37" language="java" name="com.jhlabs.image.AbstractBufferedImageOp" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/AbstractBufferedImageOp.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="333" width="368" x="6335" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="38" language="java" name="com.jhlabs.image.OctTreeQuantizer" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/OctTreeQuantizer.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="297" width="245" x="8159" y="3131"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="39" language="java" name="com.jhlabs.image.MotionBlur" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/MotionBlur.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="315" width="140" x="8863" y="3131"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="40" language="java" name="com.jhlabs.image.PlasmaFilter" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/PlasmaFilter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="567" width="236" x="6335" y="1948"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="41" language="java" name="com.jhlabs.image.RippleFilter" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/RippleFilter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="477" width="195" x="1767" y="3131"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="42" language="java" name="com.jhlabs.image.FourColorFilter" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/FourColorFilter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="603" width="152" x="4596" y="1107"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="43" language="java" name="com.jhlabs.image.MotionBlurFilter" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/MotionBlurFilter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="603" width="274" x="8970" y="1948"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="44" language="java" name="com.jhlabs.image.TransformFilter" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/TransformFilter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="549" width="332" x="3572" y="1948"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="45" language="java" name="com.jhlabs.image.SwirlMethod" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/SwirlMethod.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="243" width="193" x="1432" y="4008"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="46" language="java" name="com.jhlabs.image.PointFilter" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/PointFilter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="298" x="5050" y="410"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="47" language="java" name="com.jhlabs.image.WoodFilter" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/WoodFilter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="603" width="162" x="6133" y="1948"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="48" language="java" name="com.jhlabs.image.MarbleFilter" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/MarbleFilter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="423" width="274" x="3907" y="3131"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="49" language="java" name="com.jhlabs.image.InvertAlphaFilter" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/InvertAlphaFilter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="140" x="4416" y="1107"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="50" language="java" name="com.jhlabs.image.OctTreeQuantizer.OctTreeNode" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/OctTreeQuantizer.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="243" width="139" x="8159" y="4008"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="51" language="java" name="com.jhlabs.image.CircleFilter" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/CircleFilter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="567" width="274" x="2002" y="3131"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="52" language="java" name="com.jhlabs.image.PointillizeFilter" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/PointillizeFilter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="333" width="166" x="6403" y="3131"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="53" language="java" name="com.jhlabs.image.DitherFilter" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/DitherFilter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="765" width="175" x="4201" y="1107"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="54" language="java" name="com.jhlabs.image.MotionBlurFilter.FastTransform" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/MotionBlurFilter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="315" width="225" x="9064" y="3131"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="55" language="java" name="com.jhlabs.image.Quantizer" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/Quantizer.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="135" width="245" x="8425" y="4008"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="56" language="java" name="com.jhlabs.image.WholeImageFilter" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/WholeImageFilter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="171" width="274" x="6335" y="1107"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="57" language="java" name="com.jhlabs.image.ConvolveFilter" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/ConvolveFilter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="603" width="368" x="8410" y="1107"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="58" language="java" name="com.jhlabs.image.PinchFilter" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/PinchFilter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="585" width="274" x="1432" y="3131"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="59" language="java" name="com.jhlabs.image.WeaveFilter" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/WeaveFilter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="801" width="190" x="1704" y="1107"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="60" language="java" name="com.jhlabs.image.CausticsFilter" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/CausticsFilter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="603" width="241" x="4550" y="1948"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="61" language="java" name="com.jhlabs.image.CheckFilter" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/CheckFilter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="783" width="222" x="4788" y="1107"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="62" language="java" name="com.jhlabs.image.SmearFilter" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/SmearFilter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="711" width="266" x="5309" y="1948"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="63" language="java" name="com.jhlabs.image.WaveType" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/WaveType.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="171" width="143" x="1767" y="4008"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="64" language="java" name="com.jhlabs.image.SphereFilter" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/SphereFilter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="531" width="274" x="2630" y="3131"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="65" language="java" name="com.jhlabs.image.FeedbackFilter" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/FeedbackFilter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="657" width="274" x="2679" y="410"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="66" language="java" name="com.jhlabs.image.CellularFilter.GridType" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/CellularFilter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="225" width="295" x="7028" y="3131"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <class id="67" language="java" name="com.jhlabs.image.StampFilter" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/StampFilter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="513" width="274" x="5050" y="1107"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="68" language="java" name="com.jhlabs.image.LaplaceFilter" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/LaplaceFilter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="135" width="274" x="366" y="410"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="69" language="java" name="com.jhlabs.image.CellularFilter" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/CellularFilter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="1143" width="199" x="6653" y="1948"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="70" language="java" name="com.jhlabs.image.MotionBlurOp" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/MotionBlurOp.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="495" width="274" x="8060" y="1948"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="71" language="java" name="com.jhlabs.image.CellularFilter.Point" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/CellularFilter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="189" width="94" x="6632" y="4008"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="72" language="java" name="com.jhlabs.image.RaysFilter" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/RaysFilter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="261" width="274" x="7824" y="3131"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="73" language="java" name="com.jhlabs.image.ArrayColormap" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/ArrayColormap.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="261" width="206" x="5615" y="1948"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="74" language="java" name="com.jhlabs.image.GlintFilter" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/GlintFilter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="495" width="327" x="7637" y="1107"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="75" language="java" name="com.jhlabs.image.TritoneFilter" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/TritoneFilter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="315" width="274" x="6693" y="3131"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <dependency id="76">    
+    <end type="SOURCE" refId="48"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <generalization id="77">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="69"/>  
+  </generalization>  
+  <generalization id="78">    
+    <bendpoint x="1652" y="1107"/>    
+    <bendpoint x="2648" y="410"/>    
+    <end type="SOURCE" refId="32"/>    
+    <end type="TARGET" refId="37"/>  
+  </generalization>  
+  <dependency id="79">    
+    <bendpoint x="5927" y="3131"/>    
+    <end type="SOURCE" refId="69"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <generalization id="80">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="56"/>  
+  </generalization>  
+  <dependency id="81">    
+    <bendpoint x="4280" y="1948"/>    
+    <bendpoint x="5156" y="3131"/>    
+    <end type="SOURCE" refId="67"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <dependency id="82">    
+    <end type="SOURCE" refId="25"/>    
+    <end type="TARGET" refId="26"/>  
+  </dependency>  
+  <dependency id="83">    
+    <bendpoint x="8939" y="1948"/>    
+    <bendpoint x="8939" y="1107"/>    
+    <bendpoint x="8939" y="410"/>    
+    <end type="SOURCE" refId="28"/>    
+    <end type="TARGET" refId="37"/>  
+  </dependency>  
+  <dependency id="84">    
+    <bendpoint x="5906" y="3131"/>    
+    <end type="SOURCE" refId="47"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <dependency id="85">    
+    <bendpoint x="1631" y="1107"/>    
+    <end type="SOURCE" refId="30"/>    
+    <end type="TARGET" refId="32"/>  
+  </dependency>  
+  <generalization id="86">    
+    <end type="SOURCE" refId="41"/>    
+    <end type="TARGET" refId="44"/>  
+  </generalization>  
+  <generalization id="87">    
+    <end type="SOURCE" refId="64"/>    
+    <end type="TARGET" refId="44"/>  
+  </generalization>  
+  <dependency id="88">    
+    <end type="SOURCE" refId="52"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <generalization id="89">    
+    <end type="SOURCE" refId="67"/>    
+    <end type="TARGET" refId="46"/>  
+  </generalization>  
+  <nesting id="90">    
+    <end type="SOURCE" refId="69"/>    
+    <end type="TARGET" refId="66"/>  
+  </nesting>  
+  <generalization id="91">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="37"/>  
+  </generalization>  
+  <dependency id="92">    
+    <bendpoint x="1673" y="1107"/>    
+    <bendpoint x="1673" y="1948"/>    
+    <bendpoint x="1380" y="3131"/>    
+    <end type="SOURCE" refId="65"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <dependency id="93">    
+    <bendpoint x="8918" y="1948"/>    
+    <bendpoint x="8832" y="3131"/>    
+    <end type="SOURCE" refId="57"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <dependency id="94">    
+    <bendpoint x="7709" y="3131"/>    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <dependency id="95">    
+    <end type="SOURCE" refId="64"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <dependency id="96">    
+    <bendpoint x="7772" y="3131"/>    
+    <end type="SOURCE" refId="36"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <generalization id="97">    
+    <bendpoint x="6187" y="410"/>    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="37"/>  
+  </generalization>  
+  <generalization id="98">    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="44"/>  
+  </generalization>  
+  <generalization id="99">    
+    <end type="SOURCE" refId="31"/>    
+    <end type="TARGET" refId="73"/>  
+  </generalization>  
+  <dependency id="100">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <dependency id="101">    
+    <end type="SOURCE" refId="67"/>    
+    <end type="TARGET" refId="32"/>  
+  </dependency>  
+  <association id="102">    
+    <end type="SOURCE" refId="50" navigable="false">      
+      <attribute id="103" name="parent"/>      
+      <multiplicity id="104" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="50" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="105">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="44"/>  
+  </generalization>  
+  <dependency id="106">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <dependency id="107">    
+    <end type="SOURCE" refId="29"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <generalization id="108">    
+    <end type="SOURCE" refId="60"/>    
+    <end type="TARGET" refId="56"/>  
+  </generalization>  
+  <dependency id="109">    
+    <end type="SOURCE" refId="72"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <dependency id="110">    
+    <bendpoint x="8455" y="3131"/>    
+    <end type="SOURCE" refId="43"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <generalization id="111">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="56"/>  
+  </generalization>  
+  <generalization id="112">    
+    <bendpoint x="6953" y="1948"/>    
+    <bendpoint x="6953" y="1107"/>    
+    <end type="SOURCE" refId="75"/>    
+    <end type="TARGET" refId="46"/>  
+  </generalization>  
+  <generalization id="113">    
+    <end type="SOURCE" refId="48"/>    
+    <end type="TARGET" refId="44"/>  
+  </generalization>  
+  <dependency id="114">    
+    <bendpoint x="5413" y="3131"/>    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <dependency id="115">    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <realization id="116">    
+    <end type="SOURCE" refId="70"/>    
+    <end type="TARGET" refId="39"/>  
+  </realization>  
+  <dependency id="117">    
+    <bendpoint x="7793" y="3131"/>    
+    <end type="SOURCE" refId="26"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <realization id="118">    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="11"/>  
+  </realization>  
+  <dependency id="119">    
+    <bendpoint x="1610" y="1107"/>    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="32"/>  
+  </dependency>  
+  <dependency id="120">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <dependency id="121">    
+    <end type="SOURCE" refId="41"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <dependency id="122">    
+    <bendpoint x="8364" y="1948"/>    
+    <bendpoint x="8476" y="3131"/>    
+    <end type="SOURCE" refId="25"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <generalization id="123">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="56"/>  
+  </generalization>  
+  <dependency id="124">    
+    <bendpoint x="9033" y="3131"/>    
+    <end type="SOURCE" refId="43"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <dependency id="125">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <dependency id="126">    
+    <end type="SOURCE" refId="47"/>    
+    <end type="TARGET" refId="20"/>  
+  </dependency>  
+  <generalization id="127">    
+    <end type="SOURCE" refId="36"/>    
+    <end type="TARGET" refId="56"/>  
+  </generalization>  
+  <dependency id="128">    
+    <bendpoint x="1296" y="1107"/>    
+    <bendpoint x="1296" y="1948"/>    
+    <bendpoint x="1296" y="3131"/>    
+    <end type="SOURCE" refId="23"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <generalization id="129">    
+    <end type="SOURCE" refId="51"/>    
+    <end type="TARGET" refId="44"/>  
+  </generalization>  
+  <generalization id="130">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="24"/>  
+  </generalization>  
+  <nesting id="131">    
+    <bendpoint x="6662" y="3131"/>    
+    <end type="SOURCE" refId="69"/>    
+    <end type="TARGET" refId="71"/>  
+  </nesting>  
+  <dependency id="132">    
+    <bendpoint x="1359" y="3131"/>    
+    <end type="SOURCE" refId="32"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <generalization id="133">    
+    <bendpoint x="7627" y="410"/>    
+    <end type="SOURCE" refId="74"/>    
+    <end type="TARGET" refId="37"/>  
+  </generalization>  
+  <generalization id="134">    
+    <end type="SOURCE" refId="30"/>    
+    <end type="TARGET" refId="37"/>  
+  </generalization>  
+  <generalization id="135">    
+    <end type="SOURCE" refId="42"/>    
+    <end type="TARGET" refId="46"/>  
+  </generalization>  
+  <dependency id="136">    
+    <bendpoint x="4259" y="1948"/>    
+    <bendpoint x="5135" y="3131"/>    
+    <end type="SOURCE" refId="61"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <dependency id="137">    
+    <bendpoint x="1694" y="1948"/>    
+    <bendpoint x="1401" y="3131"/>    
+    <end type="SOURCE" refId="59"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <generalization id="138">    
+    <bendpoint x="6344" y="410"/>    
+    <end type="SOURCE" refId="56"/>    
+    <end type="TARGET" refId="37"/>  
+  </generalization>  
+  <association id="139">    
+    <end type="SOURCE" refId="38" navigable="false">      
+      <attribute id="140" name="colorList"/>      
+      <multiplicity id="141" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="50" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="142">    
+    <end type="SOURCE" refId="49"/>    
+    <end type="TARGET" refId="46"/>  
+  </generalization>  
+  <generalization id="143">    
+    <end type="SOURCE" refId="19"/>    
+    <end type="TARGET" refId="44"/>  
+  </generalization>  
+  <generalization id="144">    
+    <end type="SOURCE" refId="40"/>    
+    <end type="TARGET" refId="56"/>  
+  </generalization>  
+  <generalization id="145">    
+    <end type="SOURCE" refId="69"/>    
+    <end type="TARGET" refId="56"/>  
+  </generalization>  
+  <association id="146">    
+    <end type="SOURCE" refId="72" navigable="false">      
+      <attribute id="147" name="colormap"/>      
+      <multiplicity id="148" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="149">    
+    <end type="SOURCE" refId="67"/>    
+    <end type="TARGET" refId="26"/>  
+  </dependency>  
+  <association id="150">    
+    <bendpoint x="6599" y="3131"/>    
+    <end type="SOURCE" refId="69" navigable="false">      
+      <attribute id="151" name="colormap"/>      
+      <multiplicity id="152" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="153">    
+    <bendpoint x="3581" y="1107"/>    
+    <bendpoint x="3581" y="410"/>    
+    <end type="SOURCE" refId="44"/>    
+    <end type="TARGET" refId="37"/>  
+  </generalization>  
+  <dependency id="154">    
+    <bendpoint x="7688" y="1948"/>    
+    <bendpoint x="7688" y="3131"/>    
+    <end type="SOURCE" refId="57"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <association id="155">    
+    <end type="SOURCE" refId="38" navigable="false">      
+      <attribute id="156" name="root"/>      
+      <multiplicity id="157" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="50" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="158">    
+    <end type="SOURCE" refId="38"/>    
+    <end type="TARGET" refId="55"/>  
+  </realization>  
+  <realization id="159">    
+    <end type="SOURCE" refId="58"/>    
+    <end type="TARGET" refId="45"/>  
+  </realization>  
+  <dependency id="160">    
+    <end type="SOURCE" refId="31"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <dependency id="161">    
+    <bendpoint x="5177" y="3131"/>    
+    <end type="SOURCE" refId="62"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <dependency id="162">    
+    <bendpoint x="8497" y="3131"/>    
+    <end type="SOURCE" refId="26"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <association id="163">    
+    <bendpoint x="6641" y="3131"/>    
+    <end type="SOURCE" refId="69" navigable="false">      
+      <attribute id="164" name="resultsTL"/>      
+      <multiplicity id="165" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="71" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="166">    
+    <end type="SOURCE" refId="65"/>    
+    <end type="TARGET" refId="37"/>  
+  </generalization>  
+  <dependency id="167">    
+    <bendpoint x="8434" y="3131"/>    
+    <end type="SOURCE" refId="36"/>    
+    <end type="TARGET" refId="55"/>  
+  </dependency>  
+  <generalization id="168">    
+    <end type="SOURCE" refId="52"/>    
+    <end type="TARGET" refId="69"/>  
+  </generalization>  
+  <nesting id="169">    
+    <end type="SOURCE" refId="38"/>    
+    <end type="TARGET" refId="50"/>  
+  </nesting>  
+  <generalization id="170">    
+    <bendpoint x="7994" y="1107"/>    
+    <bendpoint x="7994" y="410"/>    
+    <end type="SOURCE" refId="70"/>    
+    <end type="TARGET" refId="37"/>  
+  </generalization>  
+  <dependency id="171">    
+    <end type="SOURCE" refId="40"/>    
+    <end type="TARGET" refId="20"/>  
+  </dependency>  
+  <association id="172">    
+    <end type="SOURCE" refId="69" navigable="false">      
+      <attribute id="173" name="gridType"/>      
+      <multiplicity id="174" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="66" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="175">    
+    <end type="SOURCE" refId="69"/>    
+    <end type="TARGET" refId="31"/>  
+  </dependency>  
+  <nesting id="176">    
+    <end type="SOURCE" refId="43"/>    
+    <end type="TARGET" refId="54"/>  
+  </nesting>  
+  <generalization id="177">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="37"/>  
+  </generalization>  
+  <realization id="178">    
+    <bendpoint x="5219" y="3131"/>    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="11"/>  
+  </realization>  
+  <dependency id="179">    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="32"/>  
+  </dependency>  
+  <generalization id="180">    
+    <end type="SOURCE" refId="58"/>    
+    <end type="TARGET" refId="44"/>  
+  </generalization>  
+  <association id="181">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="182" name="curves"/>      
+      <multiplicity id="183" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="29" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="184">    
+    <end type="SOURCE" refId="28"/>    
+    <end type="TARGET" refId="26"/>  
+  </generalization>  
+  <generalization id="185">    
+    <bendpoint x="5600" y="1107"/>    
+    <end type="SOURCE" refId="47"/>    
+    <end type="TARGET" refId="46"/>  
+  </generalization>  
+  <dependency id="186">    
+    <bendpoint x="1338" y="1107"/>    
+    <bendpoint x="1338" y="1948"/>    
+    <bendpoint x="1338" y="3131"/>    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <generalization id="187">    
+    <end type="SOURCE" refId="61"/>    
+    <end type="TARGET" refId="46"/>  
+  </generalization>  
+  <dependency id="188">    
+    <end type="SOURCE" refId="34"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <dependency id="189">    
+    <end type="SOURCE" refId="28"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <dependency id="190">    
+    <bendpoint x="6997" y="3131"/>    
+    <end type="SOURCE" refId="69"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <generalization id="191">    
+    <end type="SOURCE" refId="22"/>    
+    <end type="TARGET" refId="37"/>  
+  </generalization>  
+  <dependency id="192">    
+    <bendpoint x="5434" y="3131"/>    
+    <end type="SOURCE" refId="47"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <generalization id="193">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="56"/>  
+  </generalization>  
+  <generalization id="194">    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="37"/>  
+  </generalization>  
+  <dependency id="195">    
+    <end type="SOURCE" refId="52"/>    
+    <end type="TARGET" refId="71"/>  
+  </dependency>  
+  <generalization id="196">    
+    <end type="SOURCE" refId="33"/>    
+    <end type="TARGET" refId="37"/>  
+  </generalization>  
+  <generalization id="197">    
+    <bendpoint x="8960" y="1107"/>    
+    <bendpoint x="8960" y="410"/>    
+    <end type="SOURCE" refId="43"/>    
+    <end type="TARGET" refId="37"/>  
+  </generalization>  
+  <dependency id="198">    
+    <bendpoint x="1736" y="1948"/>    
+    <bendpoint x="1736" y="3131"/>    
+    <end type="SOURCE" refId="27"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <realization id="199">    
+    <end type="SOURCE" refId="43"/>    
+    <end type="TARGET" refId="39"/>  
+  </realization>  
+  <dependency id="200">    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <dependency id="201">    
+    <bendpoint x="5198" y="3131"/>    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <dependency id="202">    
+    <end type="SOURCE" refId="41"/>    
+    <end type="TARGET" refId="63"/>  
+  </dependency>  
+  <generalization id="203">    
+    <end type="SOURCE" refId="72"/>    
+    <end type="TARGET" refId="70"/>  
+  </generalization>  
+  <dependency id="204">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <dependency id="205">    
+    <end type="SOURCE" refId="36"/>    
+    <end type="TARGET" refId="38"/>  
+  </dependency>  
+  <generalization id="206">    
+    <end type="SOURCE" refId="59"/>    
+    <end type="TARGET" refId="46"/>  
+  </generalization>  
+  <dependency id="207">    
+    <bendpoint x="6620" y="3131"/>    
+    <end type="SOURCE" refId="40"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <association id="208">    
+    <bendpoint x="5455" y="3131"/>    
+    <end type="SOURCE" refId="47" navigable="false">      
+      <attribute id="209" name="colormap"/>      
+      <multiplicity id="210" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="211">    
+    <bendpoint x="1317" y="1107"/>    
+    <bendpoint x="1317" y="1948"/>    
+    <bendpoint x="1317" y="3131"/>    
+    <end type="SOURCE" refId="22"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <dependency id="212">    
+    <bendpoint x="8808" y="1107"/>    
+    <bendpoint x="8808" y="410"/>    
+    <end type="SOURCE" refId="26"/>    
+    <end type="TARGET" refId="37"/>  
+  </dependency>  
+  <generalization id="213">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="44"/>  
+  </generalization>  
+  <generalization id="214">    
+    <bendpoint x="6601" y="1948"/>    
+    <end type="SOURCE" refId="34"/>    
+    <end type="TARGET" refId="56"/>  
+  </generalization>  
+  <generalization id="215">    
+    <end type="SOURCE" refId="27"/>    
+    <end type="TARGET" refId="46"/>  
+  </generalization>  
+  <dependency id="216">    
+    <end type="SOURCE" refId="34"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <generalization id="217">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="44"/>  
+  </generalization>  
+  <dependency id="218">    
+    <end type="SOURCE" refId="48"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <dependency id="219">    
+    <bendpoint x="8008" y="1948"/>    
+    <bendpoint x="7606" y="1107"/>    
+    <bendpoint x="7606" y="410"/>    
+    <end type="SOURCE" refId="72"/>    
+    <end type="TARGET" refId="37"/>  
+  </dependency>  
+  <generalization id="220">    
+    <end type="SOURCE" refId="62"/>    
+    <end type="TARGET" refId="56"/>  
+  </generalization>  
+  <dependency id="221">    
+    <bendpoint x="8029" y="1948"/>    
+    <bendpoint x="8128" y="3131"/>    
+    <end type="SOURCE" refId="74"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <generalization id="222">    
+    <bendpoint x="8036" y="410"/>    
+    <end type="SOURCE" refId="57"/>    
+    <end type="TARGET" refId="37"/>  
+  </generalization>  
+  <generalization id="223">    
+    <end type="SOURCE" refId="26"/>    
+    <end type="TARGET" refId="57"/>  
+  </generalization>  
+  <dependency id="224">    
+    <end type="SOURCE" refId="31"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <dependency id="225">    
+    <end type="SOURCE" refId="51"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <association id="226">    
+    <bendpoint x="5885" y="3131"/>    
+    <end type="SOURCE" refId="40" navigable="false">      
+      <attribute id="227" name="colormap"/>      
+      <multiplicity id="228" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="229">    
+    <end type="SOURCE" refId="68"/>    
+    <end type="TARGET" refId="37"/>  
+  </generalization>  
+  <dependency id="230">    
+    <bendpoint x="3876" y="3131"/>    
+    <end type="SOURCE" refId="44"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <association id="231">    
+    <bendpoint x="7646" y="1948"/>    
+    <bendpoint x="7667" y="3131"/>    
+    <end type="SOURCE" refId="74" navigable="false">      
+      <attribute id="232" name="colormap"/>      
+      <multiplicity id="233" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="234">    
+    <end type="SOURCE" refId="53"/>    
+    <end type="TARGET" refId="46"/>  
+  </generalization>  
+  <dependency id="235">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="71"/>  
+  </dependency>  
+  <dependency id="236">    
+    <end type="SOURCE" refId="75"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <dependency id="237">    
+    <end type="SOURCE" refId="74"/>    
+    <end type="TARGET" refId="26"/>  
+  </dependency>  
+  <dependency id="238">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <dependency id="239">    
+    <bendpoint x="7667" y="1948"/>    
+    <bendpoint x="7751" y="3131"/>    
+    <end type="SOURCE" refId="24"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <dependency id="240">    
+    <end type="SOURCE" refId="75"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <dependency id="241">    
+    <bendpoint x="6622" y="1948"/>    
+    <end type="SOURCE" refId="74"/>    
+    <end type="TARGET" refId="20"/>  
+  </dependency>  
+  <association id="242">    
+    <end type="SOURCE" refId="50" navigable="false">      
+      <attribute id="243" name="leaf"/>      
+      <multiplicity id="244" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="50" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="245">    
+    <bendpoint x="7585" y="1948"/>    
+    <bendpoint x="7585" y="1107"/>    
+    <bendpoint x="7585" y="410"/>    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="37"/>  
+  </generalization>  
+  <dependency id="246">    
+    <bendpoint x="7564" y="1948"/>    
+    <bendpoint x="7730" y="3131"/>    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <generalization id="247">    
+    <end type="SOURCE" refId="24"/>    
+    <end type="TARGET" refId="46"/>  
+  </generalization>  
+  <generalization id="248">    
+    <end type="SOURCE" refId="46"/>    
+    <end type="TARGET" refId="37"/>  
+  </generalization>  
+  <generalization id="249">    
+    <end type="SOURCE" refId="23"/>    
+    <end type="TARGET" refId="37"/>  
+  </generalization>  
+  <generalization id="250">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="44"/>  
+  </generalization>  
+  <generalization id="251">    
+    <end type="SOURCE" refId="35"/>    
+    <end type="TARGET" refId="44"/>  
+  </generalization>  
+  <generalization id="252">    
+    <bendpoint x="8015" y="410"/>    
+    <end type="SOURCE" refId="25"/>    
+    <end type="TARGET" refId="37"/>  
+  </generalization>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
