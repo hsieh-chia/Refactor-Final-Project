@@ -172,7 +172,16 @@ public class GlintFilter extends AbstractBufferedImageOp {
     public Colormap getColormap() {
         return colormap;
     }
-
+    
+    private int colormapOperation(int length, int index) {
+    	int argb = colormap.getColor((float) index / length);
+        int r = (argb >> 16) & 0xff;
+        int g = (argb >> 8) & 0xff;
+        int b = argb & 0xff;
+        argb = (argb & 0xff000000) | ((int) (amount * r) << 16) | ((int) (amount * g) << 8) | (int) (amount * b);
+        return argb;
+    }
+    
     @Override
     public BufferedImage filter(BufferedImage src, BufferedImage dst) {
         int width = src.getWidth();
@@ -194,21 +203,11 @@ public class GlintFilter extends AbstractBufferedImageOp {
         int[] colors2 = new int[length2 + 1];
 
         if (colormap != null) {
-            for (int i = 0; i <= length; i++) {
-                int argb = colormap.getColor((float) i / length);
-                int r = (argb >> 16) & 0xff;
-                int g = (argb >> 8) & 0xff;
-                int b = argb & 0xff;
-                argb = (argb & 0xff000000) | ((int) (amount * r) << 16) | ((int) (amount * g) << 8) | (int) (amount * b);
-                colors[i] = argb;
+            for (int i = 0; i <= length; i++) {            	
+                colors[i] = colormapOperation(length, i);
             }
-            for (int i = 0; i <= length2; i++) {
-                int argb = colormap.getColor((float) i / length2);
-                int r = (argb >> 16) & 0xff;
-                int g = (argb >> 8) & 0xff;
-                int b = argb & 0xff;
-                argb = (argb & 0xff000000) | ((int) (amount * r) << 16) | ((int) (amount * g) << 8) | (int) (amount * b);
-                colors2[i] = argb;
+            for (int i = 0; i <= length2; i++) {               
+                colors2[i] = colormapOperation(length2, i);
             }
         }
 
