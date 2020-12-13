@@ -96,12 +96,17 @@ public class DoGFilter extends AbstractBufferedImageOp {
     public boolean getInvert() {
         return invert;
     }
-
+    
+    private void setfilter(float radius, String filtername,BufferedImage src, BufferedImage bufferOutput) {
+    	BoxBlurFilter blur = new BoxBlurFilter(radius, radius, 3, filtername);
+        blur.setProgressTracker(pt);
+        bufferOutput = blur.filter(src, null);
+    }
     @Override
     public BufferedImage filter(BufferedImage src, BufferedImage dst) {
         int width = src.getWidth();
         int height = src.getHeight();
-        BufferedImage image1;
+        BufferedImage image1 = null;
 
         int singleBlurUnit = 3 * (width + height);
         int workUnits = 0;
@@ -118,17 +123,13 @@ public class DoGFilter extends AbstractBufferedImageOp {
         pt = createProgressTracker(workUnits);
 
         if (radius1 > 0.0f) {
-            BoxBlurFilter blur = new BoxBlurFilter(radius1, radius1, 3, filterName);
-            blur.setProgressTracker(pt);
-            image1 = blur.filter(src, null);
+        	setfilter(radius1, filterName, src, image1);
         } else {
             image1 = src;
         }
 //        BufferedImage image2;
         if (radius2 > 0.0f) {
-            BoxBlurFilter blur = new BoxBlurFilter(radius2, radius2, 3, filterName);
-            blur.setProgressTracker(pt);
-            dst = blur.filter(src, null);
+        	setfilter(radius2, filterName, src, dst);
         } else {
             dst = ImageUtils.copyImage(src);
         }
