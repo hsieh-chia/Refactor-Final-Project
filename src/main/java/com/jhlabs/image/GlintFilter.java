@@ -182,6 +182,29 @@ public class GlintFilter extends AbstractBufferedImageOp {
         return argb;
     }
     
+    private void buildmask(BufferedImage src, BufferedImage mask, int []pixels, int width, int height) {
+    	
+        int threshold3 = (int) (threshold * 3 * 255);
+        for (int y = 0; y < height; y++) {
+            getRGB(src, 0, y, width, 1, pixels);
+            for (int x = 0; x < width; x++) {
+                int rgb = pixels[x];
+                int a = rgb & 0xff000000;
+                int r = (rgb >> 16) & 0xff;
+                int g = (rgb >> 8) & 0xff;
+                int b = rgb & 0xff;
+                int l = r + g + b;
+                if (l < threshold3) {
+                    pixels[x] = 0xff000000;
+                } else {
+                    l /= 3;
+                    pixels[x] = a | (l << 16) | (l << 8) | l;
+                }
+            }
+            setRGB(mask, 0, y, width, 1, pixels);
+        }
+    }
+    
     @Override
     public BufferedImage filter(BufferedImage src, BufferedImage dst) {
         int width = src.getWidth();
@@ -213,26 +236,8 @@ public class GlintFilter extends AbstractBufferedImageOp {
 
         BufferedImage mask = new BufferedImage(width, height, TYPE_INT_ARGB);
 
-        int threshold3 = (int) (threshold * 3 * 255);
-        for (int y = 0; y < height; y++) {
-            getRGB(src, 0, y, width, 1, pixels);
-            for (int x = 0; x < width; x++) {
-                int rgb = pixels[x];
-                int a = rgb & 0xff000000;
-                int r = (rgb >> 16) & 0xff;
-                int g = (rgb >> 8) & 0xff;
-                int b = rgb & 0xff;
-                int l = r + g + b;
-                if (l < threshold3) {
-                    pixels[x] = 0xff000000;
-                } else {
-                    l /= 3;
-                    pixels[x] = a | (l << 16) | (l << 8) | l;
-                }
-            }
-            setRGB(mask, 0, y, width, 1, pixels);
-        }
-
+        buildmask(src, mask, pixels, width, height);
+        
         if (blur != 0) {
             GaussianFilter gf = new GaussianFilter(blur, filterName);
             gf.setProgressTracker(pt);
