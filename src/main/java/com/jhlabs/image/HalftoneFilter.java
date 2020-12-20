@@ -23,8 +23,9 @@ import java.awt.image.BufferedImage;
  */
 public class HalftoneFilter extends AbstractBufferedImageOp {
     private float softness = 0.1f;
-    private boolean invert;
-    private boolean monochrome;
+    // should have default value
+    private boolean invert = false;
+    private boolean monochrome = true;
     private BufferedImage mask;
 
     public HalftoneFilter(String name) {
@@ -131,25 +132,8 @@ public class HalftoneFilter extends AbstractBufferedImageOp {
                 int inRGB = inPixels[x];
                 if (invert) {
                     maskRGB ^= 0xffffff;
-                }
-                if (monochrome) {
-                    int v = PixelUtils.brightness(maskRGB);
-                    int iv = PixelUtils.brightness(inRGB);
-                    float f = 1 - ImageMath.smoothStep(iv - s, iv + s, v);
-                    int a = (int) (255 * f);
-                    inPixels[x] = (inRGB & 0xff000000) | (a << 16) | (a << 8) | a;
-                } else {
-                    int ir = (inRGB >> 16) & 0xff;
-                    int ig = (inRGB >> 8) & 0xff;
-                    int ib = inRGB & 0xff;
-                    int mr = (maskRGB >> 16) & 0xff;
-                    int mg = (maskRGB >> 8) & 0xff;
-                    int mb = maskRGB & 0xff;
-                    int r = (int) (255 * (1 - ImageMath.smoothStep(ir - s, ir + s, mr)));
-                    int g = (int) (255 * (1 - ImageMath.smoothStep(ig - s, ig + s, mg)));
-                    int b = (int) (255 * (1 - ImageMath.smoothStep(ib - s, ib + s, mb)));
-                    inPixels[x] = (inRGB & 0xff000000) | (r << 16) | (g << 8) | b;
-                }
+                }                
+                inPixels[x] = pixelcoloring(maskRGB, inRGB, s, getMonochrome());                
             }
 
             setRGB(dst, 0, y, width, 1, inPixels);
@@ -158,6 +142,29 @@ public class HalftoneFilter extends AbstractBufferedImageOp {
         finishProgressTracker();
 
         return dst;
+    }
+    
+    private int pixelcoloring(int maskRGB, int inRGB,float softness, boolean monochrome) {
+    	int pixel;
+    	if (monochrome) {
+            int v = PixelUtils.brightness(maskRGB);
+            int iv = PixelUtils.brightness(inRGB);
+            float f = 1 - ImageMath.smoothStep(iv - softness, iv + softness, v);
+            int a = (int) (255 * f);
+            pixel = (inRGB & 0xff000000) | (a << 16) | (a << 8) | a;
+        } else {
+            int ir = (inRGB >> 16) & 0xff;
+            int ig = (inRGB >> 8) & 0xff;
+            int ib = inRGB & 0xff;
+            int mr = (maskRGB >> 16) & 0xff;
+            int mg = (maskRGB >> 8) & 0xff;
+            int mb = maskRGB & 0xff;
+            int r = (int) (255 * (1 - ImageMath.smoothStep(ir - softness, ir + softness, mr)));
+            int g = (int) (255 * (1 - ImageMath.smoothStep(ig - softness, ig + softness, mg)));
+            int b = (int) (255 * (1 - ImageMath.smoothStep(ib - softness, ib + softness, mb)));
+            pixel = (inRGB & 0xff000000) | (r << 16) | (g << 8) | b;
+        }
+    	return pixel;
     }
 
     @Override

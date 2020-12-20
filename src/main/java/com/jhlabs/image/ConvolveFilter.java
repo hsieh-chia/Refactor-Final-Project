@@ -289,7 +289,7 @@ public class ConvolveFilter extends AbstractBufferedImageOp {
         int halfRows = rows / 2;
         int halfCols = cols / 2;
 
-        progressTracker = createProgressTracker(height);
+        pt = createProgressTracker(height);
 
         for (int y = 0; y < height; y++) {
             for (int x = 0; x < width; x++) {
@@ -336,7 +336,7 @@ public class ConvolveFilter extends AbstractBufferedImageOp {
                 int eachRoundBlue = PixelUtils.clamp((int) (b + 0.5));
                 outputPixels[index++] = (eachRoundAlpha << 24) | (eachRoundRed << 16) | (eachRoundGreen << 8) | eachRoundBlue;
             }
-            progressTracker.unitDone();
+            pt.unitDone();
         }
         finishProgressTracker();
     }

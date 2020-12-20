@@ -41,7 +41,7 @@ public abstract class AbstractBufferedImageOp implements BufferedImageOp, Clonea
      */
     protected final String filterName;
 
-    protected ProgressTracker progressTracker;
+    protected ProgressTracker pt;
 
     /**
      * Whether this filter is used as a helper filter for another
@@ -55,26 +55,26 @@ public abstract class AbstractBufferedImageOp implements BufferedImageOp, Clonea
     }
 
     public void setProgressTracker(ProgressTracker progressTracker) {
-        this.progressTracker = progressTracker;
+        this.pt = progressTracker;
         usedAsHelper = true;
     }
 
     public ProgressTracker getProgressTracker() {
-        return progressTracker;
+        return pt;
     }
 
     protected ProgressTracker createProgressTracker(int workUnits) {
         if (!usedAsHelper) {
-            progressTracker = new StatusBarProgressTracker(filterName, workUnits);
+        	pt = new StatusBarProgressTracker(filterName, workUnits);
         }
-        return progressTracker;
+        return pt;
     }
 
     protected void finishProgressTracker() {
         // if it is used as a helper filter, then the
         // calling filter will finish it
         if (!usedAsHelper) {
-            progressTracker.finished();
+        	pt.finished();
         }
     }
 
