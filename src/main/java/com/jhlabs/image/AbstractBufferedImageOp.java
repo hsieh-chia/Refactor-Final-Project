@@ -41,7 +41,7 @@ public abstract class AbstractBufferedImageOp implements BufferedImageOp, Clonea
      */
     protected final String filterName;
 
-    protected ProgressTracker pt;
+    protected ProgressTracker progressTracker;
 
     /**
      * Whether this filter is used as a helper filter for another
@@ -54,38 +54,38 @@ public abstract class AbstractBufferedImageOp implements BufferedImageOp, Clonea
         assert filterName != null;
     }
 
-    public void setProgressTracker(ProgressTracker pt) {
-        this.pt = pt;
+    public void setProgressTracker(ProgressTracker progressTracker) {
+        this.progressTracker = progressTracker;
         usedAsHelper = true;
     }
 
     public ProgressTracker getProgressTracker() {
-        return pt;
+        return progressTracker;
     }
 
     protected ProgressTracker createProgressTracker(int workUnits) {
         if (!usedAsHelper) {
-            pt = new StatusBarProgressTracker(filterName, workUnits);
+            progressTracker = new StatusBarProgressTracker(filterName, workUnits);
         }
-        return pt;
+        return progressTracker;
     }
 
     protected void finishProgressTracker() {
         // if it is used as a helper filter, then the
         // calling filter will finish it
         if (!usedAsHelper) {
-            pt.finished();
+            progressTracker.finished();
         }
     }
 
     //  ******* End of Pixelitor-specific stuff *******
 
     @Override
-    public BufferedImage createCompatibleDestImage(BufferedImage src, ColorModel dstCM) {
-        if (dstCM == null) {
-            dstCM = src.getColorModel();
+    public BufferedImage createCompatibleDestImage(BufferedImage src, ColorModel dstColorModel) {
+        if (dstColorModel == null) {
+            dstColorModel = src.getColorModel();
         }
-        return new BufferedImage(dstCM, dstCM.createCompatibleWritableRaster(src.getWidth(), src.getHeight()), dstCM
+        return new BufferedImage(dstColorModel, dstColorModel.createCompatibleWritableRaster(src.getWidth(), src.getHeight()), dstColorModel
                 .isAlphaPremultiplied(), null);
     }
 
@@ -95,12 +95,12 @@ public abstract class AbstractBufferedImageOp implements BufferedImageOp, Clonea
     }
 
     @Override
-    public Point2D getPoint2D(Point2D srcPt, Point2D dstPt) {
-        if (dstPt == null) {
-            dstPt = new Point2D.Double();
+    public Point2D getPoint2D(Point2D srcPoint, Point2D dstPoint) {
+        if (dstPoint == null) {
+            dstPoint = new Point2D.Double();
         }
-        dstPt.setLocation(srcPt.getX(), srcPt.getY());
-        return dstPt;
+        dstPoint.setLocation(srcPoint.getX(), srcPoint.getY());
+        return dstPoint;
     }
 
     @Override
