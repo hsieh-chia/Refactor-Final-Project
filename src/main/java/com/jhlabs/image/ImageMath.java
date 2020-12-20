@@ -687,11 +687,7 @@ public class ImageMath {
             c1 = m20 * k0 + m21 * k1 + m22 * k2 + m23 * k3;
             c0 = m30 * k0 + m31 * k1 + m32 * k2 + m33 * k3;
             int n = (int) (((c3 * x + c2) * x + c1) * x + c0);
-            if (n < 0) {
-                n = 0;
-            } else if (n > 255) {
-                n = 255;
-            }
+            n = CheckOverLoad8bits(n);
             v |= n << shift;
         }
 
@@ -746,11 +742,7 @@ public class ImageMath {
             c1 = m20 * k0 + m21 * k1 + m22 * k2 + m23 * k3;
             c0 = m30 * k0 + m31 * k1 + m32 * k2 + m33 * k3;
             int n = (int) (((c3 * t + c2) * t + c1) * t + c0);
-            if (n < 0) {
-                n = 0;
-            } else if (n > 255) {
-                n = 255;
-            }
+            n = CheckOverLoad8bits(n);
             v |= n << shift;
         }
 
@@ -889,18 +881,23 @@ public class ImageMath {
                 r = (int) (r * f);
                 g = (int) (g * f);
                 b = (int) (b * f);
-                if (r > 255) {
-                    r = 255;
-                }
-                if (g > 255) {
-                    g = 255;
-                }
-                if (b > 255) {
-                    b = 255;
-                }
+                
+                r = CheckOverLoad8bits(r);
+                g = CheckOverLoad8bits(g);
+                b = CheckOverLoad8bits(b);
+                
                 p[i] = (a << 24) | (r << 16) | (g << 8) | b;
             }
         }
+    }
+    
+    public static int CheckOverLoad8bits(int num) {
+    	if(num > 255)
+    		return 255;
+    	else if (num < 0)
+    		return 0;
+    	else
+    		return num;
     }
 }
 
