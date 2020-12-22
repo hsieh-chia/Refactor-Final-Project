@@ -1,6 +1,6 @@
 public class convolveH implements IConvolve{
     @Override
-    public void convolveProcessing(kernel, inputPixels, outputPixels, width, height, alpha, edgeAction) {
+    public void convolveProcessing(Kernel kernel, int[] inputPixels, int[] outputPixels, int width, int height, boolean alpha, int edgeAction) {
         int index = 0;
         float[] matrix = kernel.getKernelData(null);
         int cols = kernel.getWidth();
