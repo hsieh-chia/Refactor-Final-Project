@@ -1,3 +1,3 @@
 public interface IConvolve {
-    public int convolveProcessing(int a , int b);
+    public void convolveProcessing(kernel, inputPixels, outputPixels, width, height, alpha, edgeAction);
 }
