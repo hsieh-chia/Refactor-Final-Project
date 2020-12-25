@@ -134,19 +134,13 @@ public class PixelUtils {
         int b2 = rgb2 & 0xff;
 
         r1 += r2;
-        if (r1 > 255) {
-            r1 = 255;
-        }
+        r1 = ImageMath.CheckOverLoad8bits(r1);
 
         g1 += g2;
-        if (g1 > 255) {
-            g1 = 255;
-        }
+        g1 = ImageMath.CheckOverLoad8bits(g1);
 
         b1 += b2;
-        if (b1 > 255) {
-            b1 = 255;
-        }
+        b1 = ImageMath.CheckOverLoad8bits(b1);
 
         return (a1 << 24) | (r1 << 16) | (g1 << 8) | b1;
     }

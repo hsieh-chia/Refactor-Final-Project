@@ -288,15 +288,11 @@ public class CausticsFilter extends WholeImageFilter {
                             } else {
                                 b += v;
                             }
-                            if (r > 255) {
-                                r = 255;
-                            }
-                            if (g > 255) {
-                                g = 255;
-                            }
-                            if (b > 255) {
-                                b = 255;
-                            }
+                            
+                            r = ImageMath.CheckOverLoad8bits(r);
+                            g = ImageMath.CheckOverLoad8bits(g);
+                            b = ImageMath.CheckOverLoad8bits(b);
+                           
                             pixels[i] = 0xff000000 | (r << 16) | (g << 8) | b;
                         }
                     }
@@ -314,15 +310,9 @@ public class CausticsFilter extends WholeImageFilter {
                         r += v;
                         g += v;
                         b += v;
-                        if (r > 255) {
-                            r = 255;
-                        }
-                        if (g > 255) {
-                            g = 255;
-                        }
-                        if (b > 255) {
-                            b = 255;
-                        }
+                        r = ImageMath.CheckOverLoad8bits(r);
+                        g = ImageMath.CheckOverLoad8bits(g);
+                        b = ImageMath.CheckOverLoad8bits(b);
                         pixels[i] = 0xff000000 | (r << 16) | (g << 8) | b;
                     }
                 }

@@ -9,7 +9,7 @@ import pixelitor.ThreadPool;
 
 public class SmearFilterLines extends SmearFilter{
 	
-	private Random randomGenerator;
+	private Random randomGenerator = new Random();
 	
 	public SmearFilterLines(String filterName) {
 		// TODO Auto-generated constructor stub

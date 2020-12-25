@@ -210,6 +210,12 @@ public class MotionBlurOp extends AbstractBufferedImageOp implements MotionBlur 
         return log2n;
     }
 
+    private void SwapBufferImage(BufferedImage src1, BufferedImage src2) {
+    	BufferedImage temp = src1;
+    	src1 = src2;
+    	src2 = temp;
+    }
+    
     @Override
     public BufferedImage filter(BufferedImage src, BufferedImage dst) {
         if (dst == null) {
@@ -258,9 +264,8 @@ public class MotionBlurOp extends AbstractBufferedImageOp implements MotionBlur 
 
             g.drawImage(dst, null, null);
             g.dispose();
-            BufferedImage ti = dst;
-            dst = tmp;
-            tmp = ti;
+            
+            SwapBufferImage(tmp, dst);            
             tsrc = dst;
 
             translateX *= 2;

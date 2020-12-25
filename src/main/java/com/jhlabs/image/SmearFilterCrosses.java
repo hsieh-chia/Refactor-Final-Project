@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class SmearFilterCrosses extends SmearFilter{
 	
-	private Random randomGenerator;
+	private Random randomGenerator = new Random();
 	
 	public SmearFilterCrosses(String filterName) {
         super(filterName);

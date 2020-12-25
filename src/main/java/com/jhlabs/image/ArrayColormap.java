@@ -81,22 +81,10 @@ public class ArrayColormap implements Colormap, Cloneable {
      */
     @Override
     public int getColor(float v) {
-/*
-		v *= 255;
-		int n = (int)v;
-		float f = v-n;
-		if (n < 0)
-			return map[0];
-		else if (n >= 255)
-			return map[255];
-		return ImageMath.mixColors(f, map[n], map[n+1]);
-*/
+
         int n = (int) (v * 255);
-        if (n < 0) {
-            n = 0;
-        } else if (n > 255) {
-            n = 255;
-        }
+    	n = ImageMath.CheckOverLoad8bits(n);
+
         return map[n];
     }
 

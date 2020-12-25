@@ -108,11 +108,10 @@ public class OilFilter extends WholeImageFilter {
                         int ix = x + col;
                         if (0 <= ix && ix < width) {
                             // examining each neighbor pixel which is within brush size
-                            int rgb = inPixels[ioffset + ix];
-                            int r = (rgb >> 16) & 0xff;
-                            int g = (rgb >> 8) & 0xff;
-
-                            int b = rgb & 0xff;
+                        	PixelRGB rgb = new PixelRGB(inPixels[ioffset + ix]);                            
+                            int r = rgb.getR();
+                            int g = rgb.getG();
+                            int b = rgb.getB();
                             int intensity = (r + g + b) / 3;
                             // For each sub-pixel, calculate the intensity, and determine
                             // which intensity bin that intensity number falls into

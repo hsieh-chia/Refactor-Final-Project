@@ -77,9 +77,10 @@ public class BlockFilter extends AbstractBufferedImageOp {
                 for (int by = 0; by < h; by++) {
                     for (int bx = 0; bx < w; bx++) {
                         argb = pixels[i];
-                        r += (argb >> 16) & 0xff;
-                        g += (argb >> 8) & 0xff;
-                        b += argb & 0xff;
+                        PixelRGB rgb = new PixelRGB(argb);
+                        r += rgb.getR();
+                        g += rgb.getG();
+                        b += rgb.getB();
                         i++;
                     }
                 }

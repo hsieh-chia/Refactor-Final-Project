@@ -260,17 +260,9 @@ public class MotionBlurFilter extends AbstractBufferedImageOp implements MotionB
         int[] outPixels = new int[width * height];
         getRGB(src, 0, 0, width, height, inPixels);
 
-//		float sinAngle = (float)Math.sin(angle);
-//		float cosAngle = (float)Math.cos(angle);
-//
-//		float total;
-
-//		int cx = width/2;
-//		int cy = height/2;
         int cx = (int) (width * centreX);
         int cy = (int) (height * centreY);
 
-//        int index = 0;
 
         float imageRadius = (float) Math.sqrt(cx * cx + cy * cy);
         float translateX = (float) (distance * Math.cos(angle));

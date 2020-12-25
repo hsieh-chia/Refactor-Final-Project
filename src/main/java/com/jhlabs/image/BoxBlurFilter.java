@@ -153,10 +153,11 @@ public class BoxBlurFilter extends AbstractBufferedImageOp {
 
             for (int i = -r; i <= r; i++) {
                 int rgb = in[inIndex + ImageMath.clamp(i, 0, width - 1)];
-                ta += (rgb >> 24) & 0xff;
-                tr += (rgb >> 16) & 0xff;
-                tg += (rgb >> 8) & 0xff;
-                tb += rgb & 0xff;
+                PixelRGB pixelrgb = new PixelRGB(rgb);
+                ta += pixelrgb.getA();
+                tr += pixelrgb.getR();
+                tg += pixelrgb.getG();
+                tb += pixelrgb.getB();
             }
 
             for (int x = 0; x < width; x++) {
@@ -197,22 +198,26 @@ public class BoxBlurFilter extends AbstractBufferedImageOp {
             outIndex += height;
             for (int x = 1; x < width - 1; x++) {
                 int i = inIndex + x;
-                int rgb1 = in[i - 1];
-                int rgb2 = in[i];
-                int rgb3 = in[i + 1];
+                PixelRGB rgb1 = new PixelRGB(in[i - 1]);
+                PixelRGB rgb2 = new PixelRGB(in[i]);
+                PixelRGB rgb3 = new PixelRGB(in[i + 1]);
 
-                int a1 = (rgb1 >> 24) & 0xff;
-                int r1 = (rgb1 >> 16) & 0xff;
-                int g1 = (rgb1 >> 8) & 0xff;
-                int b1 = rgb1 & 0xff;
-                int a2 = (rgb2 >> 24) & 0xff;
-                int r2 = (rgb2 >> 16) & 0xff;
-                int g2 = (rgb2 >> 8) & 0xff;
-                int b2 = rgb2 & 0xff;
-                int a3 = (rgb3 >> 24) & 0xff;
-                int r3 = (rgb3 >> 16) & 0xff;
-                int g3 = (rgb3 >> 8) & 0xff;
-                int b3 = rgb3 & 0xff;
+
+                int a1 = rgb1.getA();
+                int r1 = rgb1.getR();
+                int g1 = rgb1.getG();
+                int b1 = rgb1.getB();
+                
+                int a2 = rgb2.getA();
+                int r2 = rgb2.getR();
+                int g2 = rgb2.getG();
+                int b2 = rgb2.getB();
+                
+                int a3 = rgb3.getA();
+                int r3 = rgb3.getR();
+                int g3 = rgb3.getG();
+                int b3 = rgb3.getB();
+                
                 a1 = a2 + (int) ((a1 + a3) * radius);
                 r1 = r2 + (int) ((r1 + r3) * radius);
                 g1 = g2 + (int) ((g1 + g3) * radius);

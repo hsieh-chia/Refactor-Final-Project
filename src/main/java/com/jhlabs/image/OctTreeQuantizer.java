@@ -138,16 +138,7 @@ public class OctTreeQuantizer implements Quantizer {
             OctTreeNode child;
             int bit = 0x80 >> level;
 
-            int index = 0;
-            if ((red & bit) != 0) {
-                index += 4;
-            }
-            if ((green & bit) != 0) {
-                index += 2;
-            }
-            if ((blue & bit) != 0) {
-                index += 1;
-            }
+            int index = ColorWeights(red, green, blue, bit);
 
             child = node.leaf[index];
 
@@ -162,7 +153,7 @@ public class OctTreeQuantizer implements Quantizer {
         System.out.println("getIndexForColor failed");
         return 0;
     }
-
+    
     private void insertColor(int rgb) {
         int red = (rgb >> 16) & 0xff;
         int green = (rgb >> 8) & 0xff;
@@ -175,16 +166,7 @@ public class OctTreeQuantizer implements Quantizer {
             OctTreeNode child;
             int bit = 0x80 >> level;
 
-            int index = 0;
-            if ((red & bit) != 0) {
-                index += 4;
-            }
-            if ((green & bit) != 0) {
-                index += 2;
-            }
-            if ((blue & bit) != 0) {
-                index += 1;
-            }
+            int index = ColorWeights(red, green, blue, bit);
 
             child = node.leaf[index];
 
@@ -221,6 +203,20 @@ public class OctTreeQuantizer implements Quantizer {
             }
         }
         System.out.println("insertColor failed");
+    }
+    
+    private int ColorWeights(int red, int green, int blue, int bit) {
+    	int index = 0;
+        if ((red & bit) != 0) {
+            index += 4;
+        }
+        if ((green & bit) != 0) {
+            index += 2;
+        }
+        if ((blue & bit) != 0) {
+            index += 1;
+        }
+        return index;
     }
 
     private void reduceTree(int numColors) {

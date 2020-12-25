@@ -6,7 +6,7 @@ import pixelitor.ThreadPool;
 
 abstract public class SmearFilterShapes extends SmearFilter{
 	
-	private Random randomGenerator;
+	private Random randomGenerator = new Random();
 	
 	public SmearFilterShapes (String filterName) {
 		// TODO Auto-generated constructor stub
