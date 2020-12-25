@@ -344,15 +344,10 @@ public class LensBlurFilter extends AbstractBufferedImageOp {
                         int b = (int) gb[1][xm];
 
                         // Clamp high pixels due to blooming
-                        if (r > 255) {
-                            r = 255;
-                        }
-                        if (g > 255) {
-                            g = 255;
-                        }
-                        if (b > 255) {
-                            b = 255;
-                        }
+                        r = ImageMath.CheckOverLoad8bits(r);
+                        g = ImageMath.CheckOverLoad8bits(g);
+                        b = ImageMath.CheckOverLoad8bits(b);
+                        
                         int argb = (a << 24) | (r << 16) | (g << 8) | b;
                         rgb[index++] = argb;
                     }
