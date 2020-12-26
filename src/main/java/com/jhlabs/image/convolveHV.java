@@ -1,4 +1,19 @@
+package com.jhlabs.image;
+
+import pixelitor.utils.ProgressTracker;
+import pixelitor.utils.StatusBarProgressTracker;
+
+import java.awt.Rectangle;
+import java.awt.RenderingHints;
+import java.awt.geom.Point2D;
+import java.awt.geom.Rectangle2D;
+import java.awt.image.BufferedImage;
+import java.awt.image.ColorModel;
+import java.awt.image.Kernel;
+
+
 public class convolveHV implements IConvolve{
+	
     @Override
     public void convolveProcessing(Kernel kernel, int[] inputPixels, int[] outputPixels, int width, int height, boolean alpha, int edgeAction) {
         int index = 0;
@@ -8,7 +23,7 @@ public class convolveHV implements IConvolve{
         int halfRows = rows / 2;
         int halfCols = cols / 2;
 
-        pt = createProgressTracker(height);
+        final ProgressTracker pt = new StatusBarProgressTracker("ConvolveFilter", height);
 
         for (int y = 0; y < height; y++) {
             for (int x = 0; x < width; x++) {
@@ -57,6 +72,6 @@ public class convolveHV implements IConvolve{
             }
             pt.unitDone();
         }
-        finishProgressTracker();
+        pt.finished();
     }
 }

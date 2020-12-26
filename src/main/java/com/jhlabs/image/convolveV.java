@@ -1,3 +1,7 @@
+package com.jhlabs.image;
+
+import java.awt.image.Kernel;
+
 public class convolveV implements IConvolve{
     @Override
     public void convolveProcessing(Kernel kernel, int[] inputPixels, int[] outputPixels, int width, int height, boolean alpha, int edgeAction) {
