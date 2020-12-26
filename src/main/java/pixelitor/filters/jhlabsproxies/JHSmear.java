@@ -18,11 +18,6 @@
 package pixelitor.filters.jhlabsproxies;
 
 import com.jhlabs.image.SmearFilterFactory;
-import com.jhlabs.image.SmearFilterCrosses;
-import com.jhlabs.image.SmearFilterLines;
-import com.jhlabs.image.SmearFilterShapesCircles;
-import com.jhlabs.image.SmearFilterShapesDiamonds;
-import com.jhlabs.image.SmearFilterSquares;
 import com.jhlabs.image.SmearFilter;
 
 import pixelitor.filters.ParametrizedFilter;

@@ -7,7 +7,7 @@ public class SmearFilterFactory {
 	    	case SmearFilter.LINES -> new SmearFilterLines(NAME);
 	    	case SmearFilter.CROSSES -> new SmearFilterCrosses(NAME);
 	    	case SmearFilter.CIRCLES -> new SmearFilterShapesCircles(NAME);
-	    	case SmearFilter.SQUARES -> new SmearFilterSquares(NAME);
+	    	case SmearFilter.SQUARES -> new SmearFilterShapesSquares(NAME);
 	    	case SmearFilter.DIAMONDS -> new SmearFilterShapesDiamonds(NAME);
 	    	default -> new SmearFilterLines(NAME);
 		};
