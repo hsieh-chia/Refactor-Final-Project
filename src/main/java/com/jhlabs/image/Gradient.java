@@ -415,6 +415,7 @@ public class Gradient extends ArrayColormap implements Cloneable {
             if (i == numKnots - 2) {
                 end++;
             }
+            GradientBlendFactory gradientblendfactory = new GradientBlendFactory();
             for (int j = xKnots[i]; j < end; j++) {
                 int rgb1 = yKnots[i];
                 int rgb2 = yKnots[i + 1];
@@ -423,23 +424,7 @@ public class Gradient extends ArrayColormap implements Cloneable {
                 int blend = getKnotBlend(i);
 
                 if (j >= 0 && j <= 255) {
-                    switch (blend) {
-                        case CONSTANT:
-                            t = 0;
-                            break;
-                        case LINEAR:
-                            break;
-                        case SPLINE:
-                            t = ImageMath.smoothStep(0.15f, 0.85f, t);
-                            break;
-                        case CIRCLE_UP:
-                            t = t - 1;
-                            t = (float) Math.sqrt(1 - t * t);
-                            break;
-                        case CIRCLE_DOWN:
-                            t = 1 - (float) Math.sqrt(1 - t * t);
-                            break;
-                    }
+                    t=gradientblendfactory.GradientBlendOperation(t,blend);
                     
                     GradientHSBFactory hsbfactory = new GradientHSBFactory(rgb1, rgb2, t);
                     GradientHSB hsbfunction = hsbfactory.getHSBfunction(type);
