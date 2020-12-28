@@ -1,7 +1,5 @@
 package com.jhlabs.image;
 
-import java.awt.Color;
-
 public class GradientBlendFactory{
 	private GradientBlend gradientblend;
 	public static final int LINEAR = 0x10;
@@ -10,7 +8,7 @@ public class GradientBlendFactory{
 	public static final int CIRCLE_DOWN = 0x40;
 	public static final int CONSTANT = 0x50;
 	
-	public int GradientBlendOperation(int t,int blend){
+	public float GradientBlendOperation(float t,int blend){
 		switch (blend) {
 	        case CONSTANT:
 	            gradientblend = new ConstantGradientBlend();
