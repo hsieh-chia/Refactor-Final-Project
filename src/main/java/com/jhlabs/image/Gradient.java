@@ -432,7 +432,6 @@ public class Gradient extends ArrayColormap implements Cloneable {
                         case LINEAR:
                             break;
                         case SPLINE:
-//						map[i] = ImageMath.colorSpline(j, numKnots, xKnots, yKnots);
                             t = ImageMath.smoothStep(0.15f, 0.85f, t);
                             break;
                         case CIRCLE_UP:
@@ -443,7 +442,7 @@ public class Gradient extends ArrayColormap implements Cloneable {
                             t = 1 - (float) Math.sqrt(1 - t * t);
                             break;
                     }
-//					if (blend != SPLINE) {
+                    
                     switch (type) {
                         case RGB:
                             map[j] = ImageMath.mixColors(t, rgb1, rgb2);

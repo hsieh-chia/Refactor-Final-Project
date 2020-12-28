@@ -1,63 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="true" nesting-relationships="true" router="FAN">  
-  <class id="1" language="java" name="com.jhlabs.image.SmearFilterFactory" project="Pixelitor" 
-    file="/Pixelitor/src/main/java/com/jhlabs/image/SmearFilterFactory.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="99" width="171" x="225" y="261"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="2" language="java" name="com.jhlabs.image.SmearFilterCrosses" project="Pixelitor" 
+  <class id="1" language="java" name="com.jhlabs.image.SmearFilterCrosses" project="Pixelitor" 
     file="/Pixelitor/src/main/java/com/jhlabs/image/SmearFilterCrosses.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="117" width="157" x="28" y="1025"/>    
+    <position height="-1" width="-1" x="567" y="773"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="3" language="java" name="com.jhlabs.image.SmearFilter" project="Pixelitor" 
+  <class id="2" language="java" name="com.jhlabs.image.SmearFilter" project="Pixelitor" 
     file="/Pixelitor/src/main/java/com/jhlabs/image/SmearFilter.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="585" width="199" x="225" y="400"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    <position height="236" width="199" x="489" y="424"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="4" language="java" name="com.jhlabs.image.SmearFilterShapes" project="Pixelitor" 
+  <class id="3" language="java" name="com.jhlabs.image.SmearFilterShapes" project="Pixelitor" 
     file="/Pixelitor/src/main/java/com/jhlabs/image/SmearFilterShapes.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="153" width="267" x="225" y="1025"/>    
+    <position height="-1" width="-1" x="819" y="791"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="5" language="java" name="com.jhlabs.image.SmearFilterShapesDiamonds" project="Pixelitor" 
+  <class id="4" language="java" name="com.jhlabs.image.SmearFilterShapesDiamonds" project="Pixelitor" 
     file="/Pixelitor/src/main/java/com/jhlabs/image/SmearFilterShapesDiamonds.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="99" width="255" x="78" y="1218"/>    
+    <position height="-1" width="-1" x="956" y="957"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="6" language="java" name="com.jhlabs.image.SmearFilterLines" project="Pixelitor" 
+  <class id="5" language="java" name="com.jhlabs.image.SmearFilterLines" project="Pixelitor" 
     file="/Pixelitor/src/main/java/com/jhlabs/image/SmearFilterLines.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="135" width="242" x="532" y="1025"/>    
+    <position height="-1" width="-1" x="328" y="782"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="7" language="java" name="com.jhlabs.image.SmearFilterShapesCircles" project="Pixelitor" 
+  <class id="6" language="java" name="com.jhlabs.image.SmearFilterShapesCircles" project="Pixelitor" 
     file="/Pixelitor/src/main/java/com/jhlabs/image/SmearFilterShapesCircles.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="99" width="255" x="373" y="1218"/>    
+    <position height="-1" width="-1" x="661" y="957"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="com.jhlabs.image.SmearFilterShapesSquares" project="Pixelitor" 
+    file="/Pixelitor/src/main/java/com/jhlabs/image/SmearFilterShapesSquares.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="375" y="955"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -65,28 +65,28 @@
     </display>  
   </class>  
   <generalization id="8">    
-    <end type="SOURCE" refId="4"/>    
+    <end type="SOURCE" refId="7"/>    
     <end type="TARGET" refId="3"/>  
   </generalization>  
   <generalization id="9">    
-    <end type="SOURCE" refId="7"/>    
-    <end type="TARGET" refId="4"/>  
-  </generalization>  
-  <dependency id="10">    
     <end type="SOURCE" refId="1"/>    
-    <end type="TARGET" refId="3"/>  
-  </dependency>  
+    <end type="TARGET" refId="2"/>  
+  </generalization>  
+  <generalization id="10">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="2"/>  
+  </generalization>  
   <generalization id="11">    
     <end type="SOURCE" refId="6"/>    
     <end type="TARGET" refId="3"/>  
   </generalization>  
   <generalization id="12">    
-    <end type="SOURCE" refId="5"/>    
-    <end type="TARGET" refId="4"/>  
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="3"/>  
   </generalization>  
   <generalization id="13">    
-    <end type="SOURCE" refId="2"/>    
-    <end type="TARGET" refId="3"/>  
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="2"/>  
   </generalization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
