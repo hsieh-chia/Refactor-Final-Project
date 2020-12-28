@@ -418,8 +418,6 @@ public class Gradient extends ArrayColormap implements Cloneable {
             for (int j = xKnots[i]; j < end; j++) {
                 int rgb1 = yKnots[i];
                 int rgb2 = yKnots[i + 1];
-                float[] hsb1 = Color.RGBtoHSB((rgb1 >> 16) & 0xff, (rgb1 >> 8) & 0xff, rgb1 & 0xff, null);
-                float[] hsb2 = Color.RGBtoHSB((rgb2 >> 16) & 0xff, (rgb2 >> 8) & 0xff, rgb2 & 0xff, null);
                 float t = (j - xKnots[i]) / spanLength;
                 int type = getKnotType(i);
                 int blend = getKnotBlend(i);
@@ -443,28 +441,9 @@ public class Gradient extends ArrayColormap implements Cloneable {
                             break;
                     }
                     
-                    switch (type) {
-                        case RGB:
-                            map[j] = ImageMath.mixColors(t, rgb1, rgb2);
-                            break;
-                        case HUE_CW:
-                        case HUE_CCW:
-                            if (type == HUE_CW) {
-                                if (hsb2[0] <= hsb1[0]) {
-                                    hsb2[0] += 1.0f;
-                                }
-                            } else {
-                                if (hsb1[0] <= hsb2[1]) {
-                                    hsb1[0] += 1.0f;
-                                }
-                            }
-                            float h = ImageMath.lerp(t, hsb1[0], hsb2[0]) % ImageMath.TWO_PI;
-                            float s = ImageMath.lerp(t, hsb1[1], hsb2[1]);
-                            float b = ImageMath.lerp(t, hsb1[2], hsb2[2]);
-                            map[j] = 0xff000000 | Color.HSBtoRGB(h, s, b);//FIXME-alpha
-                            break;
-                    }
-//					}
+                    GradientHSBFactory hsbfactory = new GradientHSBFactory(rgb1, rgb2, t);
+                    GradientHSB hsbfunction = hsbfactory.getHSBfunction(type);
+                    map[j] = hsbfunction.getmap();             
                 }
             }
         }
