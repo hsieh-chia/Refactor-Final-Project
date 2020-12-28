@@ -18,10 +18,10 @@ public class GradientHSBFactory {
     
     private int rgb1, rgb2;
     private float t;
-    public GradientHSBFactory(int rgb_1, int rgb_2, float temp_t) {
-    	rgb1 = rgb_1;
-    	rgb2 = rgb_2;
-    	t = temp_t;
+    public GradientHSBFactory(int rgb1, int rgb2, float t) {
+    	this.rgb1 = rgb1;
+    	this.rgb2 = rgb2;
+    	this.t = t;
     }
     
     public GradientHSB getHSBfunction(int type) {

@@ -16,7 +16,7 @@ limitations under the License.
 
 package com.jhlabs.image;
 
-import java.awt.Color;
+
 
 /**
  * A Colormap implemented using Catmull-Rom colour splines. The map has a variable number
