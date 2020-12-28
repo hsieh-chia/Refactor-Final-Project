@@ -261,17 +261,13 @@ public class ConvolveFilter extends AbstractBufferedImageOp {
      * @param edgeAction what to do at the edges
      */
     public void convolve(Kernel kernel, int[] inputPixels, int[] outputPixels, int width, int height, boolean alpha, int edgeAction) {
-        //new Iconvolve
     	IConvolve convolveProcess;
         if (kernel.getHeight() == 1) {
             convolveProcess = new convolveH();
-            // convolveH(kernel, inputPixels, outputPixels, width, height, alpha, edgeAction);     //new convolveH
         } else if (kernel.getWidth() == 1) {
             convolveProcess = new convolveV();
-            // convolveV(kernel, inputPixels, outputPixels, width, height, alpha, edgeAction);     //new convolveV
         } else {
             convolveProcess = new convolveHV();
-            // convolveHV(kernel, inputPixels, outputPixels, width, height, alpha, edgeAction);     //new convolveHV
         }
         convolveProcess.convolveProcessing(kernel, inputPixels, outputPixels, width, height, alpha, edgeAction);
 
