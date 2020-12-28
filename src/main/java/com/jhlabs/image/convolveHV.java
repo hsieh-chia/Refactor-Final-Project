@@ -3,12 +3,6 @@ package com.jhlabs.image;
 import pixelitor.utils.ProgressTracker;
 import pixelitor.utils.StatusBarProgressTracker;
 
-import java.awt.Rectangle;
-import java.awt.RenderingHints;
-import java.awt.geom.Point2D;
-import java.awt.geom.Rectangle2D;
-import java.awt.image.BufferedImage;
-import java.awt.image.ColorModel;
 import java.awt.image.Kernel;
 
 
